@@ -1,0 +1,31 @@
+/* ---------- FOOTER ---------- */
+.footer {
+  margin-left: 260px; /* same as sidebar width */
+  height: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(15, 23, 42, 0.6);
+  backdrop-filter: blur(10px);
+
+  border-top: 1px solid #1e293b;
+  box-shadow: 0 -8px 20px rgba(0, 0, 0, 0.35);
+
+  color: #94a3b8;
+  font-size: 13px;
+  font-weight: 500;
+
+  position: relative;
+  z-index: 80;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) {
+  .footer {
+    margin-left: 220px; /* smaller sidebar */
+    font-size: 12px;
+  }
+}
+

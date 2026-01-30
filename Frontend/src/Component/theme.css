@@ -1,0 +1,35 @@
+:root {
+  /* ===== BACKGROUND ===== */
+  --bg-gradient-start: #020617;
+  --bg-gradient-mid: #0f172a;
+  --bg-gradient-end: #020617;
+
+  --bg-card: rgba(15, 23, 42, 0.6);
+  --bg-input: #1e293b;
+  --bg-disabled: #020617;
+
+  /* ===== BORDER ===== */
+  --border-main: #1e293b;
+  --border-input: #334155;
+
+  /* ===== TEXT ===== */
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --text-placeholder: #64748b;
+  --text-label: #cbd5f5;
+
+  /* ===== BRAND COLORS ===== */
+  --accent-primary: #f97316; /* orange */
+  --accent-secondary: #9333ea; /* purple */
+
+  /* ===== STATUS ===== */
+  --success: #22c55e;
+  --danger: #ef4444;
+
+  /* ===== UI ===== */
+  --radius-sm: 8px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+
+  --shadow-card: 0 20px 40px rgba(0, 0, 0, 0.6);
+}

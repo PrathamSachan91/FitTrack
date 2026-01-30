@@ -1,0 +1,165 @@
+/* ---------- PAGE LAYOUT ---------- */
+.enroll-page {
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #020617, #0f172a, #020617);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 16px;
+  box-sizing: border-box;
+}
+
+/* ---------- CARD ---------- */
+.enroll-card {
+  width: 100%;
+  max-width: 760px;
+  background: rgba(15, 23, 42, 0.6);
+  border-radius: 14px;
+  padding: 32px 36px;
+  border: 1px solid #1e293b;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+/* ---------- HEADINGS ---------- */
+.enroll-card h2 {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 6px;
+  background: linear-gradient(to right, #f97316, #9333ea);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.enroll-card .subtitle {
+  text-align: center;
+  color: #94a3b8;
+  margin-bottom: 28px;
+  font-size: 14px;
+}
+
+.enroll-card h4 {
+  color: #f97316;
+  border-left: 4px solid #9333ea;
+  background: linear-gradient(
+    to right,
+    rgba(249, 115, 22, 0.15),
+    transparent
+  );
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+
+/* ---------- FORM ELEMENTS ---------- */
+.enroll-card input,
+.enroll-card select,
+.enroll-card textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid #334155;
+  background: #1e293b;
+  color: #f8fafc;
+  font-size: 14px;
+  margin-bottom: 14px;
+  outline: none;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+}
+
+.enroll-card textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.enroll-card input::placeholder,
+.enroll-card textarea::placeholder {
+  color: #64748b;
+}
+
+/* ---------- FOCUS ---------- */
+.enroll-card input:focus,
+.enroll-card select:focus,
+.enroll-card textarea:focus {
+  border-color: #f97316;
+  box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.2);
+}
+
+/* ---------- ROWS ---------- */
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+/* ---------- DISABLED ---------- */
+.enroll-card select:disabled,
+.enroll-card input[readonly] {
+  background-color: #020617;
+  cursor: not-allowed;
+  color: #94a3b8;
+}
+
+/* ---------- BUTTON ---------- */
+.enroll-btn {
+  width: 100%;
+  margin-top: 26px;
+  padding: 14px;
+  background: linear-gradient(to right, #f97316, #9333ea);
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+/* ---------- TWO COLUMN ROW ---------- */
+.form-field {
+  display: flex;
+}
+
+.form-field label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #cbd5f5;
+  margin-bottom: 6px;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-field select,
+.form-field input {
+  height: 46px;
+  padding: 0 14px;
+  border-radius: 10px;
+  border: 1px solid #334155;
+  font-size: 0.95rem;
+  background: #1e293b;
+  color: #f8fafc;
+}
+
+.form-field select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg width='12' height='12' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 7L10 12L15 7' stroke='%23CBD5E1' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+}
+
+/* ---------- BUTTON HOVER ---------- */
+.enroll-btn:hover {
+  background: linear-gradient(to right, #ea580c, #7e22ce);
+  box-shadow: 0 10px 25px rgba(249, 115, 22, 0.45);
+  transform: translateY(-1px);
+}
+
+.enroll-btn:active {
+  transform: translateY(0);
+}

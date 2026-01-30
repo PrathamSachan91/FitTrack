@@ -1,0 +1,140 @@
+/* ---------- SIDEBAR CONTAINER ---------- */
+.sidebar {
+  width: 260px;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+
+  background: linear-gradient(
+    to bottom,
+    #020617,
+    #0f172a,
+    #020617
+  );
+
+  border-right: 1px solid #1e293b;
+  padding: 24px 20px;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+}
+
+/* ---------- LOGO ---------- */
+.sidebar-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 30px;
+
+  background: linear-gradient(to right, #f97316, #9333ea);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  cursor: pointer;
+}
+
+.sidebar-logo svg {
+  color: #f97316;
+}
+
+/* ---------- OLD LOGO TEXT (OPTIONAL) ---------- */
+.logo {
+  display: none;
+}
+
+/* ---------- MENU ---------- */
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* ---------- MENU ITEM ---------- */
+.menu li {
+  padding: 12px 14px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #cbd5f5;
+
+  cursor: pointer;
+  transition: all 0.25s ease;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* ---------- HOVER ---------- */
+.menu li:hover {
+  background: rgba(249, 115, 22, 0.15);
+  color: #f8fafc;
+  transform: translateX(4px);
+}
+
+/* ---------- ACTIVE (OPTIONAL) ---------- */
+.menu li.active {
+  background: linear-gradient(
+    to right,
+    rgba(249, 115, 22, 0.25),
+    rgba(147, 51, 234, 0.25)
+  );
+  color: #ffffff;
+}
+
+/* ---------- PENDING BADGE ---------- */
+.menu li.pending {
+  background: rgba(147, 51, 234, 0.15);
+  color: #e9d5ff;
+  cursor: default;
+  font-size: 13px;
+  text-align: center;
+  justify-content: center;
+}
+
+.menu li.pending:hover {
+  transform: none;
+}
+
+/* ---------- LOGOUT ---------- */
+.menu li:last-child {
+  margin-top: auto;
+  background: rgba(239, 68, 68, 0.15);
+  color: #fecaca;
+}
+
+.menu li:last-child:hover {
+  background: rgba(239, 68, 68, 0.25);
+  color: #ffffff;
+}
+
+/* ---------- SCROLLBAR (IF MENU GROWS) ---------- */
+.sidebar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 10px;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 220px;
+  }
+
+  .sidebar-logo {
+    font-size: 18px;
+  }
+}
