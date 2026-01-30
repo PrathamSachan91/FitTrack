@@ -47,6 +47,7 @@ FitTrack is a full-stack fitness tracking web application built to help users ma
 - Protected API routes with middleware
 
 ---
+```
 FitTrack/
 ├── Frontend/ # React frontend
 │ ├── src/
@@ -66,7 +67,7 @@ FitTrack/
 ├── .gitignore
 └── README.md
 
-
+```
 ---
 
 ## ⚙️ Installation & Setup
