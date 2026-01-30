@@ -20,7 +20,6 @@ export const isAuthCheck = async (req, res, next) => {
     if (!tokenRecord) {
       return res.status(401).json({ message: "Session not found" });
     }
-
     if (new Date() > tokenRecord.expiresAt) {
       await tokenRecord.destroy();
       return res.status(401).json({ message: "Session expired" });
