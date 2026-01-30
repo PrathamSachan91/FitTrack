@@ -22,7 +22,7 @@ FitTrack is a full-stack fitness tracking web application built to help users ma
 
 ### 🔐 Authentication
 ![Login](screenshots/login.png)
-![Signup](screenshots/signup.png)
+![Signup](screenshots/signin.png)
 
 ### 📊 Dashboard
 ![Dashboard](screenshots/dashboard.png)
