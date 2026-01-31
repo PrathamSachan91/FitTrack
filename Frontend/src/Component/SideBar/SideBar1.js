@@ -35,7 +35,6 @@ function SideBar() {
 
   return (
     <div className="sidebar">
-      {/* <img src={logo} alt="Logo" className="logo-img" onClick={() => navigate("/")} /> */}
       <div className="sidebar-logo">
         <Dumbbell />
         <span>FitTrack</span>
